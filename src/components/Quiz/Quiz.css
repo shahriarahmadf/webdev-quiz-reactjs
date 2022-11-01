@@ -1,0 +1,31 @@
+.quiz{
+    margin:20px;
+    border: 3px solid orange;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.805);
+    padding-bottom: 15px;
+    color: white;
+}
+.quiz img{
+    height: 300px;
+}
+.quiz h2{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: orange;
+    padding: 20px;
+}
+.start-quiz{
+    background-color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 2px solid orange;
+    border-radius: 10px;
+}
+.start-quiz:hover{
+    background-color: orange;
+    color: white;
+}
