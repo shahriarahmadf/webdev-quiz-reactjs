@@ -1,0 +1,18 @@
+.header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: orange;
+
+}
+.website-title{
+    color: navy;
+}
+.navbar{
+    text-decoration: none;
+    padding-top: 10px;
+    align-items: center;
+}
+.navbar a{
+    margin-left: 30px;
+    padding: 10px
+}
