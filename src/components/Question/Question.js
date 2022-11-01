@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import ReactDOM from 'react-dom/client';
 import Options from '../Options/Options';
 import './Question.css'
+import { BeakerIcon, EyeIcon } from '@heroicons/react/24/solid'
+import { toast } from 'react-toastify';
 
 
 const Question = ({question, index}) => {
@@ -11,6 +13,14 @@ const Question = ({question, index}) => {
         <div className='ques'>
             <p>{index}. {question.question.slice(3,-4)}</p>
 
+            <EyeIcon 
+                onClick={() => 
+                    toast.info(`${correctAnswer}`, { 
+                        position: toast.POSITION.TOP_CENTER
+                        })} 
+                className='eye'></EyeIcon>
+
+            
             {
                 options.map(option => 
                 <Options
