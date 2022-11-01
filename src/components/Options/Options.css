@@ -1,6 +1,11 @@
 .options{
-     width: 100%;
-     background-color: sandybrown;
-     padding-top: 20px;
-     padding-bottom: 20px;
+    width: 100%;
+    background-color: rgba(244, 165, 96, 0.685);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.options:hover{
+    background-color: rgba(14, 14, 163, 0.86);
+    color: white;
 }

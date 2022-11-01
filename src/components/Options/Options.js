@@ -1,8 +1,8 @@
 import React from 'react';
 import './Options.css'
 
-const Options = ({index, option}) => {
-    //console.log(index);
+const Options = ({index, option, correctAnswer}) => {
+    //console.log(correctAnswer);
     if(index == 1){
         index = 'a';
     }
@@ -15,11 +15,22 @@ const Options = ({index, option}) => {
     else if(index == 4){
         index = 'd';
     }
-
+    const inputAnswer = (ans) => {
+        //console.log(option);
+        if (ans === correctAnswer){
+            console.log('correct answer');
+        }
+        else{
+            console.log('wrong answer');
+        }
+    }
+    
     return (
-        <p className='options'>
-            ({index}) {option}
-        </p>
+        <button onClick={() => inputAnswer(option)} className='options'>
+            <p>
+                ({index}) {option}
+            </p>
+        </button>
     );
 };
 

@@ -17,6 +17,7 @@ const Question = ({question, index}) => {
                     key={(options.indexOf(option)+1)}
                     index = {(options.indexOf(option)+1)}
                     option={option}
+                    correctAnswer = {correctAnswer}
                 ></Options>)
             }
         </div>
