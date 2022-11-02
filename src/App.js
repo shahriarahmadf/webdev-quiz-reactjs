@@ -2,7 +2,7 @@ import './App.css';
 import Main from './layout/Main';
 import Home from './components/Home/Home';
 import Blogs from './components/Blogs/Blogs';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, Navigate, RouterProvider } from 'react-router-dom';
 import Statistics from './components/Statistics/Statistics';
 import Questions from './components/Questions/Questions';
 
@@ -33,7 +33,11 @@ function App() {
           element: <Questions></Questions>,
         }
       ]
-    }
+    },
+    {
+      path: '*', 
+      element: <Home></Home>,
+    },
   ])
   return (
     <div className="App">
