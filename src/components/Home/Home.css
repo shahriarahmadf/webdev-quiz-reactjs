@@ -2,6 +2,9 @@
     display: flex;
     justify-content: center;
 }
+.home{
+    margin-top: 50px;
+}
 
 @media screen and (max-width: 576px){
     .quiz-container{

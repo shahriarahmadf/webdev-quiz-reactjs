@@ -11,9 +11,9 @@ const Header = () => {
                 </div>
                 <div className="navbar">
                         
-                    <NavLink className ={`tab ${({isActive}) => isActive ? 'active-tab' : undefined}`} to='/'><h3>Home</h3></NavLink>
+                    <NavLink className ={`tab ${({isActive}) => isActive ? 'active' : 'inactive'}`} to='/home'><h3>Home</h3></NavLink>
                     <NavLink className={`tab ${({isActive}) => isActive ? 'active-tab' : undefined}`} to='/statistics'><h3>Statistics</h3></NavLink>
-                    <NavLink className={`tab ${({isActive}) => isActive ? 'active-tab' : undefined}`} to='/blogs'><h3>Statistics</h3></NavLink>
+                    <NavLink className={`tab ${({isActive}) => isActive ? 'active-tab' : undefined}`} to='/blogs'><h3>Blogs</h3></NavLink>
                 </div>
             </div>
         </div>

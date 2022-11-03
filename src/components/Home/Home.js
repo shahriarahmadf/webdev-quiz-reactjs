@@ -1,13 +1,14 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
+import HomeCard from '../HomeCard/HomeCard';
 import Quiz from '../Quiz/Quiz';
 import './Home.css'
 
 const Home = () => {
     const quizzes = useLoaderData();
     return (
-        <div>
-            <h2>This is Home</h2>
+        <div className='home'>
+            <HomeCard></HomeCard>
 
             <div className="quiz-container">
             {

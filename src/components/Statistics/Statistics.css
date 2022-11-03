@@ -1,0 +1,13 @@
+.statistics{
+    margin-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 50px;
+}
+.chart{
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+    background-color: blanchedalmond;
+    padding: 50px;
+}

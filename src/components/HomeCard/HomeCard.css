@@ -1,0 +1,21 @@
+.home-card{
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.805) ;
+    margin-bottom: 20px;
+    display: flex;    
+}
+.card-text{
+    width: 50%;
+    color: white;
+    font-size: x-large;
+    align-items: center;
+    margin-top: 90px;
+
+}
+
+.card-image img{
+    max-height: 500px;
+}
