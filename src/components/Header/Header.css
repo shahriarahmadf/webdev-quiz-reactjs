@@ -30,6 +30,9 @@
 .active{
     background-color:  aquamarine;
 }
+.inactive{
+    background-color:  navajowhite;
+}
 
 @media screen and (max-width: 576px){
     .header{

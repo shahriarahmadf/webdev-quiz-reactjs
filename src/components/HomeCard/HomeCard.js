@@ -4,7 +4,6 @@ import '../../AdobeStock_241083104-1400x934.jpg';
 
 const HomeCard = () => {
     const img = '../../AdobeStock_241083104-1400x934.jpg';
-    console.log(img);
     return (
         <div className='home-card'>
             <div className="card-text">

@@ -5,6 +5,7 @@ import Blogs from './components/Blogs/Blogs';
 import { createBrowserRouter, Navigate, RouterProvider } from 'react-router-dom';
 import Statistics from './components/Statistics/Statistics';
 import Questions from './components/Questions/Questions';
+import ErrorComponent from './components/ErrorComponent/ErrorComponent';
 
 function App() {
   const router = createBrowserRouter([
@@ -32,18 +33,18 @@ function App() {
           element: <Blogs></Blogs>,
         },
         {
-          path: '/:quizId',
+          path: '/quiz/:quizId',
           loader: async( {params} ) => {
-            return fetch(`https://openapi.programming-hero.com/api/quiz/${params.quizId}`);
+            return fetch(`https://openapi.programming-hero.com/api/quiz/${params.quizId}`)
           },
-          element: <Questions></Questions>,
-        }
+          element: <Questions></Questions>
+        },
       ]
     },
     {
-      path: '*', 
-      element: <Home></Home>,
-    },
+      path: '/*', 
+      element: <ErrorComponent></ErrorComponent>
+    }
   ])
   return (
     <div className="App">

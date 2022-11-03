@@ -5,9 +5,7 @@ import './Statistics.css'
 
 const Statistics = () => {
     const questionNumber = useLoaderData();
-    
-    console.log(questionNumber.data[0]);
-    return (
+        return (
         <div className='statistics'>
             <h2>Statistics: Number of Questions for Each Topic</h2>
             <div className="chart">

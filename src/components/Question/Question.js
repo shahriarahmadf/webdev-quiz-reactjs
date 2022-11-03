@@ -8,7 +8,6 @@ import { toast } from 'react-toastify';
 
 const Question = ({question, index}) => {
     const {options, correctAnswer} = question;
-    //console.log(question);
     return (
         <div className='ques'>
             <p>{index}. {question.question.slice(3,-4)}</p>
