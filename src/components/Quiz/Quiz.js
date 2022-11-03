@@ -11,7 +11,7 @@ const Quiz = ({quiz}) => {
             <img src={logo} alt="" />
             <h4>Total Questions: {total}</h4>
 
-            <Link to={`/${id}`}>
+            <Link to={`/quiz/${id}`}>
             <button className="start-quiz">
                 <b>Start Quiz</b>
             </button>

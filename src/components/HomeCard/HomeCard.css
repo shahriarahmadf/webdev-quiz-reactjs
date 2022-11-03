@@ -13,9 +13,33 @@
     font-size: x-large;
     align-items: center;
     margin-top: 90px;
+    padding: 20px;
 
 }
 
 .card-image img{
     max-height: 500px;
+}
+
+@media screen and (max-width: 576px){
+    .home-card{
+        flex-direction: column;
+    }
+    .card-text{
+        width: 100%;
+    }
+    .card-image img{
+        display: none;
+    }
+}
+@media screen and (min-width:577px) and (max-width: 992px) {
+    .home-card{
+        flex-direction: column;
+    }
+    .card-text{
+        width: 100%;
+    }
+    .card-image img{
+        display: none;
+    }
 }

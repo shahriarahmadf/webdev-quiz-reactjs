@@ -14,7 +14,7 @@ const Question = ({question, index}) => {
 
             <EyeIcon 
                 onClick={() => 
-                    toast.info(`${correctAnswer}`, { 
+                    toast.info(`Correct Answer: ${correctAnswer}`, { 
                         position: toast.POSITION.TOP_CENTER
                         })} 
                 className='eye'></EyeIcon>
